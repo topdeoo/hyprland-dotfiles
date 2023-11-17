@@ -1,0 +1,136 @@
+format = '$all'
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+ 
+# You can also replace your username with a neat symbol like  to save some space
+[username]
+show_always = true
+style_user = "fg:#7dda9f"
+format = '[$user]($style)'
+
+[hostname]
+style = 'fg:#7dda9f'
+format = '[@](bold yellow)[$hostname]($style)'
+ssh_only = false
+disabled = false
+
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '💀 '
+disabled = false
+
+[bun]
+format = 'via [🍔 $version](bold green) '
+
+[c]
+format = 'via [$name $version]($style)'
+style = 'fg:#87ddff'
+
+[character]
+success_symbol = '[➜](bold green) '
+error_symbol = '[✗](bold red) '
+
+[cmake]
+format = 'via [$symbol($version )]($style)'
+
+[cobol]
+format = 'via [$symbol($version )]($style)'
+
+[cmd_duration]
+min_time = 500
+format = 'took [$duration](bold yellow)'
+
+[conda]
+format = 'via [$symbol$environment]($style) '
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+
+[crystal]
+format = 'via [✨ $version](bold blue) '
+
+[daml]
+format = 'via [D $version](bold bright-green) '
+
+[dart]
+format = 'via [🔰 $version](bold red) '
+
+[deno]
+format = 'via [🦕 $version](green bold) '
+
+[directory]
+format = "[ ﱮ $path ]($style)"
+style = "fg:#E4E4E4"
+
+[docker_context]
+format = 'via [🐋 $context](blue bold)'
+
+[dotnet]
+format = 'via [$symbol($version )(🎯 $tfm )]($style)'
+
+[git_branch]
+format = '[ $symbol$branch(:$remote_branch) ]($style)'
+symbol = "  "
+
+
+[git_status]
+format = '[$all_status]($style)'
+
+
+[git_metrics]
+format = "([+$added]($added_style))[]($added_style)"
+added_style = "fg:#1C3A5E"
+deleted_style = "fg:bright-red"
+disabled = false
+
+[hg_branch]
+format = "[ $symbol$branch ]($style)"
+symbol = " "
+
+
+[os]
+format = '[$symbol](bold white)'
+disabled = false
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "

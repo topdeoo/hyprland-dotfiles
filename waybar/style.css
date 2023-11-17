@@ -1,0 +1,156 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "IntelOne Mono", "Font Awesome 6 Free";
+    font-weight: 500;
+    font-size: 16px;
+
+    border-radius: 18px;
+    text-shadow: none;
+    
+    transition-property: background;
+    transition-duration: 0.2s;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces {
+	margin-top: 6px;
+	background: rgba(16, 20, 24, 0.5);
+	transition: none;
+
+    font-size: 12px;
+}
+
+#workspaces button {
+    margin: 3px;
+    border: none;
+    padding: 0 8px;
+    background: transparent;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#workspaces button.active {
+    background: #fff9bb;
+    color: #000000;
+}
+
+#workspaces button.active:hover {
+    background: #fffcdf;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#custom-arch,
+#battery,
+#disk,
+#temperature,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#mode,
+#window {
+    margin-top: 6px;
+    padding: 0 12px;
+    color: #ffffff;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > * {
+    margin-left: 16px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > * {
+    margin-right: 16px;
+}
+
+#custom-arch {
+    color: #e17f69;
+    background: #312e2e;
+}
+
+#temperature {
+    color: #000000;
+    background-color: #7dda9f;
+}
+
+#battery {
+    color: #000000;
+    background: #50a667;
+}
+
+#battery.charging, #battery.plugged {
+    color: #000000;
+    background-color: #50a667;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #50a667;
+    color: #000000;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#disk {
+    color: #000000;
+    background: rgb(228, 189, 134);;
+}
+
+#clock {
+    background-color: #eefff1;
+    color: #000000;
+}
+
+#cpu {
+    background-color: #FE968B;
+    color: #000000;
+}
+
+#memory {
+    background-color: #FFEAAA;
+    color: #000000;
+}
+
+#pulseaudio {
+    background-color: #b0f5e5;
+    color: #000000;
+}
+
+#network {
+    background-color: #87ddff;
+    color: #000000;
+}
+
+#tray {
+    background-color: rgba(16, 20, 24, 0.5);
+}
+
+#window {
+    font-family: 'IntelOne Mono', 'Noto Sans CJK SC', sans-serif;
+    font-weight: 400;
+    background-color: #cbecff;
+    color: #000000;
+}

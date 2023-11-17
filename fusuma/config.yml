@@ -1,0 +1,20 @@
+swipe:
+  3:
+    left:
+      sendkey: "LEFTALT+RIGHT" # history back
+    right:
+      sendkey: "LEFTALT+LEFT" # history forward
+    up:
+      sendkey: "LEFTCTRL+T" # open new tab
+    down:
+      sendkey: "LEFTCTRL+W" # close tab
+  4:
+    up:
+      keypress:
+        LEFTSHIFT:
+          sendkey: "LEFTMETA+DOWN"
+          clearmodifiers: true # clear LEFTSHIFT before sending LEFTMETA+DOWN
+    left:
+      sendkey: "LEFTMETA+H" # left shift screen
+    right:
+      sendkey: "LEFTMETA+L" # right shift screen

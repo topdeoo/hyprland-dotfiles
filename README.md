@@ -29,5 +29,5 @@ Please see my personal blog, which can be found in my profile.
 
 ![Terminal](https://virgil-civil-1311056353.cos.ap-shanghai.myqcloud.com/img/202311172246247.png)
 
-![desktop.png](https://virgil-civil-1311056353.cos.ap-shanghai.myqcloud.com/img/202311172248236.png)``
+![desktop.png](https://virgil-civil-1311056353.cos.ap-shanghai.myqcloud.com/img/202311172248236.png)
 

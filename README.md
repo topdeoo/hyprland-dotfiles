@@ -16,6 +16,7 @@ I would describe what I did to beautify my desktop here.
 - wl-clipboard: A command-line copy/paste utilities for Wayland(you can only use it in Wayland)
 - copyq: A clipboard manager
 - hyprland-interactive-screenshot: A screenshot tool
+- mako: A notification daemon for Wayland
 - swaylock: A screen locker for Wayland(you can replace it with swaylock-effects)
 
 In Arch Linux, you can install them from AUR(except sharship, you can install it [here](https://starship.rs/guide/#%F0%9F%9A%80-installation))

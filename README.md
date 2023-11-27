@@ -18,6 +18,7 @@ I would describe what I did to beautify my desktop here.
 - hyprland-interactive-screenshot: A screenshot tool
 - mako: A notification daemon for Wayland
 - swaylock: A screen locker for Wayland(you can replace it with swaylock-effects)
+- zsh: A powerful shell
 
 In Arch Linux, you can install them from AUR(except sharship, you can install it [here](https://starship.rs/guide/#%F0%9F%9A%80-installation))
 

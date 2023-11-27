@@ -2,7 +2,7 @@ format = '$all'
 
 # Disable the blank line at the start of the prompt
 # add_newline = false
- 
+
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
@@ -61,7 +61,7 @@ format = 'via [🔰 $version](bold red) '
 format = 'via [🦕 $version](green bold) '
 
 [directory]
-format = "[ ﱮ $path ]($style)"
+format = "[ 📁 $path ]($style)"
 style = "fg:#E4E4E4"
 
 [docker_context]

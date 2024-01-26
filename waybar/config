@@ -23,7 +23,7 @@
     ],
     "custom/arch": {
         "format": " ",
-        "on-click": "swaylock -f -c 000000",
+        "on-click": "wlogout",
     },
     "hyprland/window": {
         "format": "\uf061 {}",

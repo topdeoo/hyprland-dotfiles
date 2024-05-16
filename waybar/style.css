@@ -6,7 +6,7 @@
 
     border-radius: 18px;
     text-shadow: none;
-    
+
     transition-property: background;
     transition-duration: 0.2s;
 }
@@ -20,9 +20,9 @@ window#waybar.hidden {
 }
 
 #workspaces {
-	margin-top: 6px;
-	background: rgba(16, 20, 24, 0.5);
-	transition: none;
+    margin-top: 6px;
+    background: rgba(16, 20, 24, 0.5);
+    transition: none;
 
     font-size: 12px;
 }
@@ -68,6 +68,7 @@ window#waybar.hidden {
 #pulseaudio,
 #tray,
 #mode,
+#bluetooth,
 #window {
     margin-top: 6px;
     padding: 0 12px;
@@ -75,12 +76,12 @@ window#waybar.hidden {
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > * {
+.modules-left>widget:first-child>* {
     margin-left: 16px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > * {
+.modules-right>widget:last-child>* {
     margin-right: 16px;
 }
 
@@ -99,7 +100,8 @@ window#waybar.hidden {
     background: #50a667;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging,
+#battery.plugged {
     color: #000000;
     background-color: #50a667;
 }
@@ -116,7 +118,18 @@ window#waybar.hidden {
 
 #disk {
     color: #000000;
-    background: rgb(228, 189, 134);;
+    background: rgb(228, 189, 134);
+    ;
+}
+
+#bluetooth {
+    background-color: #68bffa;
+    color: #000000;
+}
+
+#bluetooth.connected {
+    background-color: #1f85c9;
+    color: #000000;
 }
 
 #clock {

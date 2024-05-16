@@ -5,17 +5,16 @@
     "spacing": 6,
     "modules-left": [
         "custom/arch",
-        "hyprland/window",
-        "hyprland/workspaces"
-    ],
-    "modules-center": [
         "clock",
         "tray"
+    ],
+    "modules-center": [
+        "hyprland/workspaces",
     ],
     "modules-right": [
         "network",
         "pulseaudio",
-	"battery",
+        "battery",
         "cpu",
         "temperature",
         "memory",
@@ -30,43 +29,46 @@
         "separate-outputs": true
     },
     "hyprland/workspaces": {
-        "format": "{name}",
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        },
         "on-click": "activate",
         "on-scroll-up": "hyprctl dispatch workspace +1",
         "on-scroll-down": "hyprctl dispatch workspace -1"
     },
     "clock": {
         "interval": 1,
-        "format": "\uf017 {:%H:%M:%S}(<span style=\"italic\">UTF+08:00</span>)",
-        "format-alt": "\uf133 {:%Y-%m-%d %H:%M:%S}"
+        "format": "\uf017 {:%Y-%m-%d %H:%M:%S}(<span style=\"italic\">UTF+08:00</span>)",
     },
     "tray": {
         "icon-size": 21,
         "spacing": 10
     },
     "battery": {
-      "states": {
-        "good": 95,
-        "warning": 30,
-        "critical": 20
-      },
-      "format": "{icon} {capacity}%",
-      "format-charging": " {capacity}%",
-      "format-plugged": " {capacity}%",
-      "format-alt": "{time} {icon}",
-      "format-icons": [
-        "󰂎",
-        "󰁺",
-        "󰁻",
-        "󰁼",
-        "󰁽",
-        "󰁾",
-        "󰁿",
-        "󰂀",
-        "󰂁",
-        "󰂂",
-        "󰁹"
-      ]
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ]
     },
     "cpu": {
         "interval": 1,
